@@ -1,0 +1,20 @@
+meta {
+  name: Create Reservation
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/reservations
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "startDate": "12/12/2001",
+    "endDate": "12/25/2022",
+    "placeId": "12345",
+    "invoiceId": "493"
+  }
+}

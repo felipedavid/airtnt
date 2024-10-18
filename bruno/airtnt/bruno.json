@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "airtnt",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
