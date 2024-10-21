@@ -11,6 +11,7 @@ import { UsersRepository } from './users.repository';
     DatabaseModule.forFeature([{name: UserDocument.name, schema: UserSchema}]),
   ],
   controllers: [UsersController],
-  providers: [UsersRepository, UsersService]
+  providers: [UsersRepository, UsersService],
+  exports: [UsersService]
 })
 export class UsersModule {}
